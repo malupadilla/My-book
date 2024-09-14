@@ -23,9 +23,48 @@
     border-radius: 8px;
   }
 
+  #couter div {
+    display: flex;
+    align-items: center;
+  }
+
   #value {
     font-size: 8rem;
     color: floralwhite;
     min-width: 14rem;
     text-align: center;
+  }
+
+  button {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity .3s;
+  }
+
+  button:hover {
+    opacity: .8;
+  }
+
+  .count-button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: bisque;
+    margin-right: 1rem;
+  }
+
+  .count-button:last-child {
+    margin-right: 0rem;
+    margin-left: 1rem;
+  }
+
+  #reset {
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: #f38aa5;
+    padding: .8rem 0;
+    margin-top: 1rem;
   }
