@@ -10,14 +10,14 @@ const updatValue = () => {
 let count = 0;
 let intervalid = 0;
 
-plusButton.addEventListener('mausedown', () => {
+plusButton.addEventListener('click', () => {
     intervalid = setInterval(() => {
         count +=1;
         updatValue
     }, 100);
 });
 
-minusButton.addEventListener('mausedown', () => {
+minusButton.addEventListener('click', () => {
     intervalid = setInterval(() => {
         count -=1;
         updatValue();
@@ -29,4 +29,4 @@ resetButton.addEventListener('click', () => {
     updatValue
 });
 
-document,addEventListener('mouseup', () => clearInterval(intervalid));
+document,addEventListener('clickup', () => clearInterval(intervalid));
