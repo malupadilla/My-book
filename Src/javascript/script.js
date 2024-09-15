@@ -1,5 +1,3 @@
-let count = 0;
-
 // Verifica se existe um valor armazenado para 'count' no Local Storage
 if (localStorage.getItem('count')) {
     count = parseInt(localStorage.getItem('count'));
@@ -16,6 +14,8 @@ const updateValue = () => {
 };
 
 /* Clique Normal */
+
+let count = 0;
 
 plusButton.addEventListener('click', () => {
     count += 1;
