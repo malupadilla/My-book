@@ -20,6 +20,7 @@ let count = 0;
 plusButton.addEventListener('click', () => {
     count += 1;
     updateValue();
+    localStorage.setItem('count', count); // Armazena o valor atualizado no Local Storage
 });
 
 minusButton.addEventListener('click', () => {
