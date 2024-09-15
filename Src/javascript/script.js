@@ -29,4 +29,4 @@ resetButton.addEventListener('click', () => {
     updatValue
 });
 
-document,addEventListener('clickup', () => clearInterval(intervalid));
+document.addEventListener('clickup', () => clearInterval(intervalid));
