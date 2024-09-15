@@ -13,7 +13,7 @@ let intervalid = 0;
 plusButton.addEventListener('click', () => {
     intervalid = setInterval(() => {
         count +=1;
-        updatValue
+        updatValue();
     }, 100);
 });
 
@@ -26,7 +26,7 @@ minusButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
     count = 0;
-    updatValue
+    updatValue();
 });
 
 document.addEventListener('clickup', () => clearInterval(intervalid));
