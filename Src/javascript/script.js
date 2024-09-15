@@ -1,7 +1,7 @@
-const value = document.getElementById('value')
-const plusButton = document.getElementById('plus')
-const minusButton = document.getElementById('minus')
-const resetButton = document.getElementById('reset')
+const value = document.getElementById('value');
+const plusButton = document.getElementById('plus');
+const minusButton = document.getElementById('minus');
+const resetButton = document.getElementById('reset');
 
 const updatValue = () => {
     value.innerHTML = count;
