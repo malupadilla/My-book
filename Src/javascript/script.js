@@ -3,30 +3,23 @@ const plusButton = document.getElementById('plus');
 const minusButton = document.getElementById('minus');
 const resetButton = document.getElementById('reset');
 
-const updatValue = () => {
+const updateValue = () => {
     value.innerHTML = count;
 };
 
 let count = 0;
-let intervalid = 0;
 
 plusButton.addEventListener('click', () => {
-    intervalid = setInterval(() => {
-        count +=1;
-        updatValue();
-    }, 100);
+    count += 1;
+    updateValue();
 });
 
 minusButton.addEventListener('click', () => {
-    intervalid = setInterval(() => {
-        count -=1;
-        updatValue();
-    }, 100);
+    count -= 1;
+    updateValue();
 });
 
 resetButton.addEventListener('click', () => {
     count = 0;
-    updatValue();
+    updateValue();
 });
-
-document.addEventListener('clickup', () => clearInterval(intervalid));
