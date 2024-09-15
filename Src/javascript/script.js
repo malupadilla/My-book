@@ -15,8 +15,6 @@ const updateValue = () => {
     value.innerHTML = count;
 };
 
-let count = 0;
-
 plusButton.addEventListener('click', () => {
     count += 1;
     updateValue();
