@@ -14,11 +14,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #c23350;
+    background-color: #c6186c;
   }
 
   #counter {
-    background-color: #262626;
+    background-color: #ff1695;
     padding: 2rem;
     border-radius: 8px;
   }
