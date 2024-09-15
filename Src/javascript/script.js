@@ -2,7 +2,7 @@ let count = 0;
 
 // Verifica se existe um valor armazenado para 'count' no Local Storage
 if (localStorage.getItem('count')) {
-    count = parseInt(localStorage.getItem('count'));
+    value = parseInt(localStorage.getItem('count'));
 }
 
 // Atualiza o elemento HTML com o valor de 'count' ao carregar a página
